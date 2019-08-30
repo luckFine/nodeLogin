@@ -1,0 +1,13 @@
+<%- include header %>
+<div class="jumbotron text-center">
+	<% if(locals.islogin){%>
+
+		<h2>用户：<%= test %> </h2>已经登陆
+
+		<% }else{%>
+			
+			<h2 class="text-center"><a href="/login">请登录后查看</a></h2>
+	<%}%>	
+</div>
+
+<%- include footer %>
